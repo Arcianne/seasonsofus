@@ -123,3 +123,80 @@ main {
     transform: translateX(0);
   }
 }
+
+
+/*  CONTENT SECTIONS  */
+.content {
+  padding: 3rem 8%;
+}
+
+.content p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #86A34A;
+}
+
+.content h2 {
+  font-family: 'Archivo Black', cursive;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.aboutcontent {
+  padding: 3rem 8%;
+}
+
+.aboutcontent h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #86A34A;
+}
+
+.aboutcontent h1 .dot {
+  color: #FFAA5C;
+}
+
+.aboutcontent p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #FFDBBA;
+}
+
+/*    SKILLS SECTION    */
+.skills-row {
+  display: flex;
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
