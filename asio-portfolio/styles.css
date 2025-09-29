@@ -256,6 +256,52 @@ form button:hover {
   background: #E18C3C;
 }
 
+/*    PROJECTS SECTION   */
+.project-card {
+  background: #F7FDDE;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 1.5rem 0;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img {
+  width: 70%;          
+  max-width: 350px;    
+  height: auto;
+  display: block;
+  margin: 10px auto 1rem auto;
+  border-radius: 8px;
+}
+
+.projects {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.btn-project {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #F8E064;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-family: 'Nunito', sans-serif;
+}
+
+.btn-project:hover {
+  background-color: #FFAA5C;
+  color: white;
+  transform: scale(1.05);
+}
+
 /*    FOOTER     */
 footer {
   background-color: #F8E064;
@@ -286,4 +332,18 @@ footer p {
   margin: 0;
   font-size: 0.85rem;
   color: #86A34A;
+}
+
+
+/*    RESPONSIVE DESIGN   */
+@media screen and (max-width: 1024px) {
+  #landing {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  #landing .intro {
+    max-width: 100%;
+  }
 }
