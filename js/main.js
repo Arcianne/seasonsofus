@@ -21,5 +21,5 @@ const images = document.querySelectorAll('.zoom-fade');
 
     muteBtn.addEventListener("click", () => {
     audio.muted = !audio.muted;
-    muteBtn.textContent = audio.muted ? "🔇" : "🔊";
+    muteBtn.textContent = audio.muted ? "♪ ▶" : "♪ ❚❚";
     });
