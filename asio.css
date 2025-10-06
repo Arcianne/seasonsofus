@@ -1,0 +1,152 @@
+/* ====== Reset and Base ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(https://wallpapercave.com/uwp/uwp4198368.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====== Auth Container ====== */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* ====== Login/Signup Box ====== */
+.auth-box {
+  background: rgba(255, 255, 255, 0.9); /* white with transparency */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  backdrop-filter: blur(8px); /* frosted glass effect */
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-box:hover {
+  transform: scale(1.02);
+}
+
+/* ====== Title ====== */
+.auth-box h2 {
+  color: #ff4f8b;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* ====== Input Groups ====== */
+.input-group {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: border 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.input-group input:focus {
+  border: 1px solid #ff7da3;
+  outline: none;
+}
+
+/* ====== Password Field & Toggle ====== */
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.6;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.toggle-eye:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* ====== Button ====== */
+.btn {
+  width: 100%;
+  background-color: #ff4f8b;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #ff2d70;
+  box-shadow: 0 4px 10px rgba(255, 77, 128, 0.4);
+}
+
+/* ====== Text Links ====== */
+.switch-text {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.switch-text a {
+  color: #ff4f8b;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+  color: #ff2d70;
+}
+
+/* ====== Messages ====== */
+.message {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  color: rgb(233, 40, 40);
+  min-height: 20px;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 450px) {
+  .auth-box {
+    padding: 1.5rem;
+    margin: 0 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}
