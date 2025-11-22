@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root element -->
+    <xs:element name="studentPortfolio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" type="student"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Student -->
+    <xs:complexType name="student">
+        <xs:sequence>
+            <xs:element name="personalInfo" type="personalInfo"/>
+            <xs:element name="skills" type="skills"/>
+            <xs:element name="projects" type="projects"/>
+            <xs:element name="contact" type="contact"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Personal Information -->
+    <xs:complexType name="personalInfo">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="program" type="xs:string"/>
+            <xs:element name="about" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Skills -->
+    <xs:complexType name="skills">
+        <xs:sequence>
+            <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Projects -->
+    <xs:complexType name="projects">
+        <xs:sequence>
+            <xs:element name="project" type="project" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="project">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Contact -->
+    <xs:complexType name="contact">
+        <xs:sequence>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="socials" type="socials"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="socials">
+        <xs:sequence>
+            <xs:element name="github" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
