@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+    <xsd:element name="portfolio">
+        <xsd:complexType>
+            <xsd:sequence>
+
+                <xsd:element name="student">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="firstname" type="xsd:string"/>
+                            <xsd:element name="lastname" type="xsd:string"/>
+                            <xsd:element name="course" type="xsd:string"/>
+                            <xsd:element name="yearlevel" type="xsd:string"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="about" type="xsd:string"/>
+
+                <xsd:element name="skills">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="skill" type="xsd:string" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="projects">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="project" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="title" type="xsd:string"/>
+                                        <xsd:element name="description" type="xsd:string"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="contact">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="email" type="xsd:string"/>
+                            <xsd:element name="github" type="xsd:string"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

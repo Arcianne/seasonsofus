@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="asio_transform.xsl"?>
+
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="asio_schema.xsd">
+
+    <student>
+        <firstname>Shanielle Anne</firstname>
+        <lastname>Asio</lastname>
+        <course>BS Information Technology</course>
+        <yearlevel>4th Year</yearlevel>
+    </student>
+
+    <about>
+        Hi! My name is Shanielle Anne Asio. I am a 4th-year IT student passionate
+        about web development and design.
+    </about>
+
+    <skills>
+        <skill>HTML</skill>
+        <skill>CSS</skill>
+        <skill>JavaScript</skill>
+        <skill>Python</skill>
+    </skills>
+
+    <projects>
+        <project>
+            <title>Gourmet Discoveries</title>
+            <description>A web application that allows users to explore Filipino cuisines.</description>
+        </project>
+    </projects>
+
+    <contact>
+        <email>shanielleanne27@gmail.com</email>
+        <github>https://github.com/shnll-a</github>
+    </contact>
+
+</portfolio>
