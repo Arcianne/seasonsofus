@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+  <!-- Root -->
+  <xs:element name="portfolio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="student" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="personal">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="firstname" type="xs:string"/>
+                    <xs:element name="middleinitial" type="xs:string" minOccurs="0"/>
+                    <xs:element name="lastname" type="xs:string"/>
+                    <xs:element name="course" type="xs:string"/>
+                    <xs:element name="email" type="xs:string"/>
+                    <xs:element name="linkedin" type="xs:anyURI" minOccurs="0"/>
+                    <xs:element name="github" type="xs:anyURI" minOccurs="0"/>
+                    <xs:element name="bio" type="xs:string" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <!-- education -->
+              <xs:element name="education" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="degree" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="level" type="xs:string"/>
+                          <xs:element name="program" type="xs:string"/>
+                          <xs:element name="institution" type="xs:string"/>
+                          <xs:element name="year_graduated" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <!-- skills -->
+              <xs:element name="skills" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="hard" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="soft" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <!-- projects -->
+              <xs:element name="projects" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="project" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="title" type="xs:string"/>
+                          <xs:element name="description" type="xs:string"/>
+                          <xs:element name="technologies" type="xs:string" minOccurs="0"/>
+                          <xs:element name="role" type="xs:string" minOccurs="0"/>
+                          <xs:element name="year" type="xs:gYear" minOccurs="0"/>
+                          <xs:element name="link" type="xs:anyURI" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <!-- organization -->
+              <xs:element name="organization" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="org" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="name" type="xs:string"/>
+                          <xs:element name="role" type="xs:string" minOccurs="0"/>
+                          <xs:element name="years" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

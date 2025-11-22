@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE portfolio [
+  <!ELEMENT portfolio (student+)>
+  <!ELEMENT student (personal, education?, skills?, projects?, organization?)>
+  
+  <!ELEMENT personal (firstname, middleinitial?, lastname, course, email, linkedin?, github?, bio?)>
+  <!ELEMENT firstname   (#PCDATA)>
+  <!ELEMENT middleinitial (#PCDATA)>
+  <!ELEMENT lastname    (#PCDATA)>
+  <!ELEMENT course      (#PCDATA)>
+  <!ELEMENT email       (#PCDATA)>
+  <!ELEMENT linkedin    (#PCDATA)>
+  <!ELEMENT github      (#PCDATA)>
+  <!ELEMENT bio         (#PCDATA)>
+
+  <!ELEMENT education   (degree+)>
+  <!ELEMENT degree      (level, program, institution, year_graduated)>
+  <!ELEMENT level       (#PCDATA)>
+  <!ELEMENT program     (#PCDATA)>
+  <!ELEMENT institution (#PCDATA)>
+  <!ELEMENT year_graduated (#PCDATA)>
+
+  <!ELEMENT skills      (hard?, soft?)>
+  <!ELEMENT hard        (skill+)>
+  <!ELEMENT soft        (skill+)>
+  <!ELEMENT skill       (#PCDATA)>
+
+  <!ELEMENT projects    (project+)>
+  <!ELEMENT project     (title, description, technologies?, role?, year?, link?)>
+  <!ELEMENT title       (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT technologies (#PCDATA)>
+  <!ELEMENT role        (#PCDATA)>
+  <!ELEMENT year        (#PCDATA)>
+  <!ELEMENT link        (#PCDATA)>
+
+  <!ELEMENT organization (org+)>
+  <!ELEMENT org (name, role?, years?)>
+  <!ELEMENT name         (#PCDATA)>
+  <!ELEMENT years        (#PCDATA)>
+]>
+<?xml-stylesheet type="text/xsl" href="pasion_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="pasion_schema.xsd">
+  <student>
+    <personal>
+      <firstname>Dessiree Camille</firstname>
+      <middleinitial>H.</middleinitial>
+      <lastname>Pasion</lastname>
+      <course>Bachelor of Science in Information Technology</course>
+      <email>dessireecamillepasion65@gmail.com</email>
+      <linkedin>https://www.linkedin.com/in/dessiree-camille-pasion-305047296/</linkedin>
+      <github>https://github.com/siridc</github>
+      <bio>4th year BSIT student specialized in Web and Mobile Application. Interested in UI/UX, data analytics, and database integration.</bio>
+    </personal>
+
+    <skills>
+      <hard>
+        <skill>Java</skill>
+        <skill>HTML/CSS</skill>
+        <skill>JavaScript</skill>
+        <skill>XML / XSLT / XSD</skill>
+        <skill>Visual Basic .NET</skill>
+        <skill>Basic Networking</skill>
+        <skill>Ionic</skill>
+        <skill>Dart</skill>
+        <skill>Flutter</skill>
+        <skill>Python</skill>
+        <skill>Git</skill>
+        <skill>Github</skill>
+        <skill>PHP, MySQL, and SQL</skill>
+        <skill>Figma</skill>
+        <skill>Canva</skill>
+      </hard>
+      <soft>
+        <skill>Communication and collaboration</skill>
+        <skill>Critical thinking</skill>
+        <skill>Problem solving</skill>
+        <skill>Creativity</skill>
+        <skill>Time and task management</skill>
+        <skill>Adaptability</skill>
+        <skill>Digitally responsible</skill>
+      </soft>
+    </skills>
+
+    <projects>
+      <project>
+        <title>TrueHue Mobile Application and its Landing page (Capstone)</title>
+        <description>A colorblind assistance app for color identification, designed specifically for Android mobile phones. You can download it from the website linked below.</description>
+        <technologies>Dart, Flutter</technologies>
+        <role>Developer</role>
+        <year>2025</year>
+        <link>https://truehue.vercel.app</link>
+      </project>
+    </projects>
+
+    <organization>
+      <org>
+        <name>College of Computer Studies Student Council</name>
+        <role>Board of Directors</role>
+        <years>2023-2024</years>
+      </org>
+      <org>
+        <name>College of Computer Studies Student Council</name>
+        <role>Executive Assistance - Financial Budget</role>
+        <years>2024-2025</years>
+      </org>
+      <org>
+        <name>Programmers' Den</name>
+        <role>Member</role>
+        <years>2024-2026</years>
+      </org>
+      <org>
+        <name>Student Society in Information Technology Education</name>
+        <role>Member</role>
+        <years>2024-2026</years>
+      </org>
+      <org>
+        <name>Student Society in Information Technology Education</name>
+        <role>Apprentice</role>
+        <years>2025-2026</years>
+      </org>
+    </organization>
+  </student>
+</portfolio>
